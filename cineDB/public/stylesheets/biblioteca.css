@@ -1,0 +1,13 @@
+.biblioteca__grid{
+    padding: 3rem 0;
+    display: grid;
+    min-height: 80vh;
+    grid-template-columns: repeat(5,1fr);
+    gap: 2rem;
+  }
+  
+  .grid__img {
+   
+    width: 100%; 
+    height: auto; 
+  }

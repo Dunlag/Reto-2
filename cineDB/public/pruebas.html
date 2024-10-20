@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .slider {
+            .slider__container {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.slider__track {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+}
+
+.slider__body {
+  flex: 0 0 33.33%; /* Cada imagen ocupa un tercio del ancho */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider__img {
+  width: 80%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.slider__arrow {
+  cursor: pointer;
+  width: 40px;
+}
+
+
+    </style>
+</head>
+<body>
+    <section class="slider">
+        <div class="slider__container container">
+          <!-- Flecha de navegación izquierda -->
+          <img src="./img/leftarrow.svg" class="slider__arrow" id="before">
+      
+          <!-- Contenedor de las imágenes -->
+          <div class="slider__track">
+            <section class="slider__body" data-id="1">
+              <figure class="slider__picture">
+                <img src="./img/carteles/Inception.svg" alt="Inception" class="slider__img">
+              </figure>
+            </section>
+      
+            <section class="slider__body" data-id="2">
+              <figure class="slider__picture">
+                <img src="./img/carteles/casaDragon.svg" alt="Casa del Dragón" class="slider__img">
+              </figure>
+            </section>
+      
+            <section class="slider__body" data-id="3">
+              <figure class="slider__picture">
+                <img src="./img/carteles/theLastJedi.svg" alt="The Last Jedi" class="slider__img">
+              </figure>
+            </section>
+      
+            <section class="slider__body" data-id="4">
+              <figure class="slider__picture">
+                <img src="./img/carteles/viudaNegra.svg" alt="Viuda Negra" class="slider__img">
+              </figure>
+            </section>
+      
+            <section class="slider__body" data-id="5">
+              <figure class="slider__picture">
+                <img src="./img/carteles/Harley.svg" alt="Harley Quinn" class="slider__img">
+              </figure>
+            </section>
+          </div>
+      
+          <!-- Flecha de navegación derecha -->
+          <img src="./img/rightarrow.svg" class="slider__arrow" id="next">
+        </div>
+      </section>
+      
+      <script>
+(function() {
+  const sliderTrack = document.querySelector('.slider__track');
+  const arrowNext = document.querySelector('#next');
+  const arrowBefore = document.querySelector('#before');
+  const slides = [...document.querySelectorAll('.slider__body')];
+  let currentPosition = 0;
+  const slidesToShow = 3; // Cantidad de imágenes que queremos mostrar a la vez
+  const totalSlides = slides.length;
+
+  // Configuración del ancho del track y los elementos
+  sliderTrack.style.width = `${(100 / slidesToShow) * totalSlides}%`;
+
+  // Agregar eventos para las flechas
+  arrowNext.addEventListener('click', () => changePosition(1));
+  arrowBefore.addEventListener('click', () => changePosition(-1));
+
+  function changePosition(direction) {
+    // Calculamos el nuevo valor de la posición
+    currentPosition += direction * slidesToShow;
+
+    // Si la posición excede el número de slides, la ajustamos para crear un loop
+    if (currentPosition < 0) {
+      currentPosition = totalSlides - slidesToShow;
+    } else if (currentPosition >= totalSlides) {
+      currentPosition = 0;
+    }
+
+    // Cambiamos la posición de las imágenes deslizando el track
+    sliderTrack.style.transform = `translateX(-${(100 / totalSlides) * currentPosition}%)`;
+  }
+})();
+
+
+      </script>
+</body>
+</html>

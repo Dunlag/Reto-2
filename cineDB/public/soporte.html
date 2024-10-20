@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CineDB tu gestor de peliculas personal</title>
+    <link rel="stylesheet" href="./stylesheets/style.css" />
+</head>
+
+<body>
+    <header class="header">
+        <section class="nav__container container">
+            <figure class="nav__logo">
+                <img src="./img/CineDB__Logo.svg" alt="" />
+            </figure>
+            <h1 class="nav__titulo">CINEDB</h1>
+            <div class="nav__links">
+                <a href="home.html" class="nav__link">Inicio</a>
+                <a href="#" id="" class="nav__link a__abrir">Mi cuenta</a>
+                <a href="biblioteca.html" class="nav__link">Biblioteca</a>
+                <a href="soporte.html" class="nav__link">Soporte</a>
+                <a href="login.html" class="nav__link nav__login">Login</a>
+
+            </div>
+        </section>
+    </header>
+
+    <aside class="offcanvas" id="offcanvas">
+        <h2 class="offcanvas__title">Hola Usuario</h2>
+        <ul class="offcanvas__menu">
+            <li><a href="biblioteca.html">Perfil</a></li>
+            <li><a href="biblioteca.html">Mis Películas Favoritas</a></li>
+            <li><a href="biblioteca.html">Configuración</a></li>
+            <li><a href="home.html">Cerrar sesión</a></li>
+        </ul>
+        <button id="close" class="close">Ocultar</button>
+
+    </aside>
+
+    <section class="contenedor">
+        <section class="container ">
+            <h1 class="soporte__titulo">Soporte</h1>
+            <section class="soporte container">
+                <div class="soporte__texto">
+                    <h1 class="texto__titulo titulo1"> <span>¿Necesitas</span>
+                        <span>ayuda?</span>
+                    </h1>
+                    <h1 class="texto__titulo titulo2">¡Estamos aquí para asistirte!</h1>
+                    <p class="texto__parafo">Si tienes algun problema con tu cuenta,
+                        dudas sobre como usar CineDB, o simplemente necesitas asistencia tecnica, no dudes en
+                        ponerte en contacto con nosotros. Rellena el formulario a continuacion
+                        y nos pondremos en contacto contigo lo antes posible.
+                    </p>
+                </div>
+
+                <div class="soporte__formulario">
+                    <form action="" class="formulario">
+                        <div class="seccion__formulario">
+                            <label for="nombre">Nombre</label>
+                            <input type="text" value="Nombre" class="formulario__input" id="nombre">
+                        </div>
+
+                        <div class="seccion__formulario">
+                            <label for="email">Email</label>
+                            <input type="email" value="email" class="formulario__input" id="email">
+                        </div>
+
+                        <div class="seccion__formulario">
+                            <label for="Mensaje">Mensaje</label>
+                            <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                        </div>
+
+                        <div class="seccion__formulario">
+                            <button class="seccion__enviar">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </section>
+
+
+
+    </section>
+
+    <footer class="footer">
+        <p class="footer__parrafo">Fernando Pinilla Valbuena 2DAW 2024</p>
+
+    </footer>
+    
+<script src="./js/app.js"></script>    
+</body>
+
+</html>

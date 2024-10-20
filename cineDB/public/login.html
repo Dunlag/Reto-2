@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CineDB tu gestor de peliculas personal</title>
+    <link rel="stylesheet" href="./stylesheets/style.css" />
+</head>
+
+<body>
+    <header class="header">
+        <section class="nav__container container">
+            <figure class="nav__logo">
+                <img src="./img/CineDB__Logo.svg" alt="" />
+            </figure>
+            <h1 class="nav__titulo">CINEDB</h1>
+            <div class="nav__links">
+                <a href="home.html" class="nav__link">Inicio</a>
+                <a href="biblioteca.html" class="nav__link">Biblioteca</a>
+                <a href="soporte.html" class="nav__link">Soporte</a>
+                <a href="login.html" class="nav__link nav__login">Login</a>
+            </div>
+        </section>
+    </header>
+
+    <section class="login container">
+        <figure class="login__img">
+            <img src="./img/login__img.svg" alt="" class="login__imagen" />
+        </figure>
+
+        <form action="" class="formulario__login">
+            <div class="form__container">
+                <div class="login__parte">
+                    <h1 class="login__titulo">Login</h1>
+                    <p class="login__parrafo">
+                        Por favor escribe tus datos:
+                    </p>
+                </div>
+                <div class="login__parte">
+                    <input type="text" class="login__usuario login__input" value="usuario" id="usuario">
+                </div>
+                <div class="login__parte">
+                    <input type="password" class="login__password login__input" value="password" id="password" required>
+                </div>
+                <div class="login__recordar">
+                    <label for="cuenta" class="login__cuenta">Recordar Usuario <input type="checkbox"
+                            class="login__cuenta" value="cuenta" id="cuenta"></label>
+
+                </div>
+                <div class="login__parte">
+                    <input type="button" class="login__entrar" value="Entrar" id="Entrar">
+                </div>
+            </div>
+
+        </form>
+    </section>
+
+
+
+
+    <footer class="footer">
+        <p class="footer__parrafo">Fernando Pinilla Valbuena 2DAW 2024</p>
+
+    </footer>
+</body>
+
+</html>

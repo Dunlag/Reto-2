@@ -1,0 +1,166 @@
+/* Aplicar un reset a los márgenes de todos los elementos y configurar el box-sizing para incluir padding y bordes en las dimensiones totales */
+*, 
+::after, 
+::before {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos específicos para el tema claro */
+:root[data-theme="light"] {
+    --bg-color: #fff; /* Color de fondo blanco */
+    --show-sun: block; /* Mostrar el sol en el tema claro */
+    --show-moon: none; /* Ocultar la luna en el tema claro */
+    --text-color: #111; /* Color del texto en el tema claro (negro) */
+    --message-mode: "Light Mode"; /* Mensaje que indica el modo claro */
+    --animation-sun: rotate 15s linear infinite; /* Animación de rotación para el sol */
+    --color-switcher: #c4c4c4; /* Color del fondo del interruptor en modo claro */
+    --color-active: #c1c1c1; /* Color del interruptor activo en modo claro */
+    --border-option: 20px solid #fff; /* Borde del interruptor en modo claro */
+}
+
+/* Estilos específicos para el tema oscuro */
+:root[data-theme="dark"] {
+    --bg-color: #111; /* Color de fondo negro */
+    --show-sun: none; /* Ocultar el sol en el tema oscuro */
+    --show-moon: block; /* Mostrar la luna en el tema oscuro */
+    --text-color: #fff; /* Color del texto en el tema oscuro (blanco) */
+    --message-mode: "Dark Mode"; /* Mensaje que indica el modo oscuro */
+    --animation-moon: show 4s alternate infinite both; /* Animación de aparición para la luna */
+    --color-switcher: #3b95ff; /* Color del fondo del interruptor en modo oscuro */
+    --color-active: #fff; /* Color del interruptor activo en modo oscuro */
+    --border-option: none; /* Sin borde para el interruptor en modo oscuro */
+    --transform-option: translateX(100%); /* Desplazamiento del interruptor hacia la derecha en modo oscuro */
+}
+
+/* Estilo para el cuerpo de la página, aplicando los colores de fondo y texto definidos en las variables */
+body {
+    color: var(--text-color); /* Color del texto dependiendo del tema */
+    background-color: var(--bg-color); /* Color de fondo dependiendo del tema */
+    font-family: 'Raleway', sans-serif; /* Fuente de la página */
+}
+
+/* Estilo para el contenedor principal de la página, asegurando que ocupe toda la altura de la ventana */
+.main {
+    min-height: 600px;
+    height: 100vh;
+    display: grid;
+    align-content: center; /* Centrar el contenido verticalmente */
+}
+
+/* Añade el mensaje de modo actual (Light Mode o Dark Mode) en el tema */
+.main__theme::after {
+    content: var(--message-mode); /* Muestra el mensaje según el tema activo */
+    display: block;
+    text-align: center;
+    font-size: 2.3rem;
+}
+
+/* Estilos para las secciones de los temas claro y oscuro */
+.main__light, 
+.main__dark {
+    width: max-content; /* Ajusta el ancho al contenido máximo */
+    margin: 0 auto; /* Centra horizontalmente */
+}
+
+/* Controla la visibilidad del tema claro según la variable del tema activo */
+.main__light {
+    display: var(--show-sun); /* Muestra u oculta el sol dependiendo del tema */
+}
+
+/* Controla la visibilidad del tema oscuro según la variable del tema activo */
+.main__dark {
+    display: var(--show-moon); /* Muestra u oculta la luna dependiendo del tema */
+}
+
+/* Estilo para el sol, incluyendo la animación de rotación si está en modo claro */
+#sun {
+    transform-box: fill-box;
+    transform-origin: center; /* Origen de la transformación en el centro del sol */
+    animation: var(--animation-sun); /* Aplica la animación de rotación al sol */
+}
+
+/* Estilos para las estrellas, aplicando la animación de aparición en el tema oscuro */
+[id^="star"] {
+    animation: var(--animation-moon); /* Aplica la animación de aparición a las estrellas */
+}
+
+/* Ajusta el retraso de la animación para la segunda estrella */
+#star2 {
+    animation-delay: .7s;
+}
+
+/* Ajusta el retraso de la animación para la tercera estrella */
+#star3 {
+    animation-delay: 1.4s;
+}
+
+/* Estilo para el interruptor de tema, con fondo, borde y disposición en grid */
+.main__switcher {
+    width: 160px;
+    height: 80px;
+    background-color: var(--color-switcher); /* Color de fondo según el tema */
+    margin: 0 auto;
+    margin-top: 2rem;
+    padding: 5px 10px;
+    border-radius: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Divide en dos columnas */
+    position: relative; /* Posiciona el contenido en relación con el contenedor */
+}
+
+/* Estilo para el checkbox invisible que controla el cambio de tema */
+.main__check {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 10; /* Asegura que esté por encima de otros elementos */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el elemento */
+    opacity: 0; /* Hace invisible el checkbox */
+}
+
+/* Estilo para la opción activa del interruptor (círculo que se mueve) */
+.main__option {
+    width: 70px;
+    height: 70px;
+    background-color: var(--color-active); /* Color del círculo según el tema */
+    border: var(--border-option); /* Borde según el tema */
+    border-radius: 50%; /* Hace el círculo redondo */
+    transition: transform .3s; /* Suaviza la transición cuando el círculo se mueve */
+    transform: var(--transform-option, none); /* Mueve el círculo según el tema */
+}
+
+/* Animación de rotación para el sol */
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg); /* Rota 360 grados en la animación */
+    }
+}
+
+/* Animación de aparición para las estrellas */
+@keyframes show {
+    0% {
+        opacity: 0; /* Comienza invisible */
+    }
+    100% {
+        opacity: 1; /* Termina completamente visible */
+    }
+}
+
+/* Código CSS comentado que había sido comentado anteriormente para cambiar estilos dependiendo del esquema de color preferido del usuario (opcional) */
+/* 
+@media (prefers-color-scheme: dark) {
+    :root[data-theme] {
+        --bg-color: #111;
+        --show-sun: none;
+        --show-moon: block;
+        --text-color: #fff;
+        --message-mode: "Dark Mode";
+        --animation-moon: show 4s alternate infinite both;
+        --border-option: none;
+        --color-switcher: #3B95FF;
+        --color-active: #fff;
+        --transform-option: translateX(100%);
+    }
+} 
+*/
