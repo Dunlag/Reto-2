@@ -25,24 +25,24 @@ La aplicación está desplegada en Render y es accesible desde este enlace: [Cin
 ## Instalación
 
 1. Clona el repositorio:
-   \`\`\`
+   ```
    git clone https://github.com/tu_usuario/cinedb.git
-   \`\`\`
+   ```
 
 2. Navega al directorio del proyecto:
-   \`\`\`
+   ```
    cd cinedb
-   \`\`\`
+   ```
 
 3. Instala las dependencias:
-   \`\`\`
+   ```
    npm install
-   \`\`\`
+   ```
 
 4. Inicia la aplicación:
-   \`\`\`
+   ```
    npm start
-   \`\`\`
+   ```
 
 ## Contribuciones
 
