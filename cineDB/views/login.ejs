@@ -29,31 +29,29 @@
             <img src="./img/login__img.svg" alt="" class="login__imagen" />
         </figure>
 
-        <form action="" class="formulario__login">
+        <form action="/login" method="POST" class="formulario__login">
             <div class="form__container">
                 <div class="login__parte">
                     <h1 class="login__titulo">Login</h1>
-                    <p class="login__parrafo">
-                        Por favor escribe tus datos:
-                    </p>
+                    <p class="login__parrafo">Por favor escribe tus datos:</p>
                 </div>
                 <div class="login__parte">
-                    <input type="text" class="login__usuario login__input" value="usuario" id="usuario">
+                    <input type="text" class="login__usuario login__input" name="usuario" id="usuario" required>
                 </div>
                 <div class="login__parte">
-                    <input type="password" class="login__password login__input" value="password" id="password" required>
+                    <input type="password" class="login__password login__input" name="password" id="password" required>
                 </div>
                 <div class="login__recordar">
-                    <label for="cuenta" class="login__cuenta">Recordar Usuario <input type="checkbox"
-                            class="login__cuenta" value="cuenta" id="cuenta"></label>
-
+                    <label for="cuenta" class="login__cuenta">Recordar Usuario 
+                        <input type="checkbox" class="login__cuenta" value="cuenta" id="cuenta">
+                    </label>
                 </div>
                 <div class="login__parte">
-                    <input type="button" class="login__entrar" value="Entrar" id="Entrar">
+                    <input type="submit" class="login__entrar" value="Entrar" id="Entrar">
                 </div>
             </div>
-
         </form>
+        
     </section>
 
 

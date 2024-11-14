@@ -18,6 +18,29 @@ router.get('/login', function(req, res, next) {
   res.render('login');
 });
 
+router.post('/login', function(req, res) {
+  const usuario = req.body.usuario;
+  const password = req.body.password;
+
+  let user = datos.validateUser(usuario, password);
+
+  if (user) {
+      console.log("Login exitoso:", user);
+      req.session.login = true;
+      req.session.user = user;
+      res.redirect("/biblioteca");
+  } else {
+      console.log("Login fallido");
+      res.redirect("/login");
+  }
+});
+
+
+router.get('/logout', function(req, res) {
+  req.session.destroy();
+  res.redirect("/");
+});
+
 //pagina de biblioteca
 
 router.get('/biblioteca', function(req, res, next) {
