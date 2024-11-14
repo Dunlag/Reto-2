@@ -1,0 +1,112 @@
+[
+    {
+        "id": 1,
+        "nombre": "Inception",
+        "año_estreno": 2010,
+        "sinopsis": "Un ladrón que entra en los sueños de las personas para robar sus secretos debe cumplir una última misión para limpiar su nombre.",
+        "genero": "Ciencia ficción",
+        "director": "Christopher Nolan",
+        "formato": "Blu-ray",
+        "estado": "Bueno",
+        "portada": "Inception.svg"
+    },
+    {
+        "id": 2,
+        "nombre": "The Shawshank Redemption",
+        "año_estreno": 1994,
+        "sinopsis": "Un hombre condenado por asesinato intenta sobrevivir y encontrar un propósito dentro de una prisión de máxima seguridad.",
+        "genero": "Drama",
+        "director": "Frank Darabont",
+        "formato": "DVD",
+        "estado": "Bueno",
+        "portada": "Inception.svg"
+    },
+    {
+        "id": 3,
+        "nombre": "The Godfather",
+        "año_estreno": 1972,
+        "sinopsis": "La historia de una poderosa familia mafiosa que intenta expandir su imperio en Estados Unidos.",
+        "genero": "Crimen",
+        "director": "Francis Ford Coppola",
+        "formato": "Copia digital",
+        "estado": "Dañado",
+        "portada": "Inception.svg"
+    },
+    {
+        "id": 4,
+        "nombre": "The Dark Knight",
+        "año_estreno": 2008,
+        "sinopsis": "Batman se enfrenta al Joker, un criminal caótico que amenaza con sumir a Gotham en el caos.",
+        "genero": "Acción",
+        "director": "Christopher Nolan",
+        "formato": "Blu-ray",
+        "estado": "Bueno",
+        "portada": "theLastJedi.svg"
+    },
+    {
+        "id": 5,
+        "nombre": "Pulp Fiction",
+        "año_estreno": 1994,
+        "sinopsis": "Varios personajes y sus historias se entrelazan en una trama llena de humor negro y violencia.",
+        "genero": "Crimen",
+        "director": "Quentin Tarantino",
+        "formato": "VHS",
+        "estado": "Bueno",
+        "portada": "theLastJedi.svg"
+    },
+    {
+        "id": 6,
+        "nombre": "Forrest Gump",
+        "año_estreno": 1994,
+        "sinopsis": "La vida extraordinaria de un hombre con una baja capacidad intelectual que logra grandes cosas.",
+        "genero": "Drama",
+        "director": "Robert Zemeckis",
+        "formato": "DVD",
+        "estado": "Dañado",
+        "portada": "theLastJedi.svg"
+    },
+    {
+        "id": 7,
+        "nombre": "The Matrix",
+        "año_estreno": 1999,
+        "sinopsis": "Un hacker descubre que la realidad que conoce es una simulación controlada por máquinas.",
+        "genero": "Ciencia ficción",
+        "director": "Lana y Lilly Wachowski",
+        "formato": "Copia digital",
+        "estado": "Bueno",
+        "portada": "theLastJedi.svg"
+    },
+    {
+        "id": 8,
+        "nombre": "Gladiator",
+        "año_estreno": 2000,
+        "sinopsis": "Un general romano traicionado busca venganza en la arena del Coliseo.",
+        "genero": "Acción",
+        "director": "Ridley Scott",
+        "formato": "Blu-ray",
+        "estado": "Dañado",
+        "portada": "theLastJedi.svg"
+    },
+    {
+        "id": 9,
+        "nombre": "Fight Club",
+        "año_estreno": 1999,
+        "sinopsis": "Un hombre insatisfecho encuentra una nueva forma de vida en un club de peleas clandestinas.",
+        "genero": "Drama",
+        "director": "David Fincher",
+        "formato": "DVD",
+        "estado": "Bueno",
+        "portada": "theLastJedi.svg"
+    },
+    {
+        "id": 10,
+        "nombre": "Toy Story",
+        "año_estreno": 1995,
+        "sinopsis": "Un juguete cowboy se siente amenazado cuando su dueño recibe un nuevo juguete espacial.",
+        "genero": "Animación",
+        "director": "John Lasseter",
+        "formato": "VHS",
+        "estado": "Bueno",
+        "portada": "viudaNegra.svg"
+    }
+]

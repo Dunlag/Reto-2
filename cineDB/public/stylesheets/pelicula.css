@@ -1,0 +1,30 @@
+.pelicula__detalles {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.pelicula__imagen {
+    flex: 1;
+    margin-right: 2rem;
+}
+
+.pelicula__img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Bordes redondeados */
+}
+
+.pelicula__info {
+    flex: 2;
+}
+
+.pelicula__info h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.pelicula__info p {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}

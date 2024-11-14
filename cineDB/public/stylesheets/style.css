@@ -5,6 +5,7 @@
 @import url(./login.css);
 @import url(./soporte.css);
 @import url(./biblioteca.css);
+@import url(./pelicula.css);
 
 * {
   margin: 0;

@@ -1,4 +1,4 @@
-.biblioteca__grid{
+/* .biblioteca__grid{
     padding: 3rem 0;
     display: grid;
     min-height: 80vh;
@@ -10,4 +10,52 @@
    
     width: 100%; 
     height: auto; 
-  }
+  } */
+
+  .biblioteca__grid {
+    padding: 3rem 0;
+    display: grid;
+    min-height: 80vh;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2rem;
+}
+
+.grid__img-link {
+    display: block;
+}
+
+.grid__img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Opcional: para bordes redondeados */
+}
+
+.pelicula__figure {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.pelicula__titulo {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo oscuro */
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.2rem;
+    opacity: 0; /* Título oculto por defecto */
+    transition: opacity 0.3s ease; /* Transición suave */
+    border-bottom-left-radius: 8px; /* Redondeo solo en la esquina inferior izquierda */
+    border-bottom-right-radius: 8px; /* Redondeo solo en la esquina inferior derecha */
+}
+
+.pelicula__figure:hover .pelicula__titulo {
+    opacity: 1; /* Título visible al hacer hover */
+}
+
+/* .grid__img-link:hover .grid__img {
+    transform: scale(1.05); Efecto de zoom al pasar el ratón
+} */

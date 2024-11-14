@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= pelicula.nombre %> | CineDB</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+</head>
+
+<body>
+    <header class="header">
+        <section class="nav__container container">
+            <figure class="nav__logo">
+                <img src="/img/CineDB__Logo.svg" alt="" />
+            </figure>
+            <h1 class="nav__titulo">CINEDB</h1>
+            <div class="nav__links">
+                <a href="/" class="nav__link">Inicio</a>
+                <a href="/biblioteca" class="nav__link">Biblioteca</a>
+                <a href="soporte.html" class="nav__link">Soporte</a>
+                <a href="/login" class="nav__link nav__login">Login</a>
+            </div>
+        </section>
+    </header>
+
+    <section class="pelicula__detalles container">
+        <!-- Columna de la izquierda: imagen -->
+        <div class="pelicula__imagen">
+            <img src="/img/carteles/<%= pelicula.portada %>" alt="<%= pelicula.nombre %>" class="pelicula__img">
+        </div>
+
+        <!-- Columna de la derecha: detalles de la película -->
+        <div class="pelicula__info">
+            <h2><%= pelicula.nombre %></h2>
+            <p><strong>Año:</strong> <%= pelicula.año %></p>
+            <p><strong>Género:</strong> <%= pelicula.genero %></p>
+            <p><strong>Director:</strong> <%= pelicula.director %></p>
+            <p><strong>Formato:</strong> <%= pelicula.formato %></p>
+            <p><strong>Estado:</strong> <%= pelicula.estado %></p>
+            <p><strong>Sinopsis:</strong></p>
+            <p><%= pelicula.sinopsis %></p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p class="footer__parrafo">Fernando Pinilla Valbuena 2DAW 2024</p>
+    </footer>
+    <script src="/js/app.js"></script>   
+</body>
+
+</html>

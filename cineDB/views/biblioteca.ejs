@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CineDB tu gestor de peliculas personal</title>
+    <link rel="stylesheet" href="./stylesheets/style.css" />
+</head>
+
+<body>
+    <header class="header">
+        <section class="nav__container container">
+            <figure class="nav__logo">
+                <img src="./img/CineDB__Logo.svg" alt="" />
+            </figure>
+            <h1 class="nav__titulo">CINEDB</h1>
+            <div class="nav__links">
+                <a href="/" class="nav__link">Inicio</a>
+                <a href="/biblioteca" class="nav__link">Biblioteca</a>
+                <a href="soporte.html" class="nav__link">Soporte</a>
+                <a href="/login" class="nav__link nav__login">Login</a>
+            </div>
+        </section>
+    </header>
+
+    <aside class="offcanvas" id="offcanvas">
+        <h2 class="offcanvas__title">Hola Usuario</h2>
+        <ul class="offcanvas__menu">
+            <li><a href="biblioteca.html">Perfil</a></li>
+            <li><a href="biblioteca.html">Mis Películas Favoritas</a></li>
+            <li><a href="biblioteca.html">Configuración</a></li>
+            <li><a href="/">Cerrar sesión</a></li>
+        </ul>
+        <button id="close" class="close">Ocultar</button>
+    </aside>
+
+    <section class="biblioteca__grid container">
+        <!-- Itera sobre las películas y muestra una imagen en un enlace -->
+        <% imagenes.forEach(function(pelicula) { %>
+            <a href="/biblioteca/<%= pelicula.id %>" class="grid__img-link">
+                <figure class="pelicula__figure">
+                    <img src="./img/carteles/<%= pelicula.portada %>" alt="<%= pelicula.nombre %>" class="grid__img">
+                    <figcaption class="pelicula__titulo"><%= pelicula.nombre %></figcaption>
+                </figure>
+            </a>            
+        <% }); %>
+    </section>
+    
+    
+
+    <footer class="footer">
+        <p class="footer__parrafo">Fernando Pinilla Valbuena 2DAW 2024</p>
+    </footer>
+    <script src="./js/app.js"></script>   
+</body>
+
+</html>
