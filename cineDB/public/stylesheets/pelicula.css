@@ -2,6 +2,8 @@
     display: flex;
     justify-content: space-between;
     padding: 2rem;
+    height: 80vh;
+    padding-top: 5rem;
 }
 
 .pelicula__imagen {
