@@ -19,7 +19,7 @@
         "director": "Frank Darabont",
         "formato": "DVD",
         "estado": "Bueno",
-        "portada": "Inception.svg"
+        "portada": "cadenaperpetua.jpg"
     },
     {
         "id": 3,
@@ -30,7 +30,7 @@
         "director": "Francis Ford Coppola",
         "formato": "Copia digital",
         "estado": "Dañado",
-        "portada": "Inception.svg"
+        "portada": "elpadrino.jpg"
     },
     {
         "id": 4,
@@ -41,7 +41,7 @@
         "director": "Christopher Nolan",
         "formato": "Blu-ray",
         "estado": "Bueno",
-        "portada": "theLastJedi.svg"
+        "portada": "thedarkknight.jpg"
     },
     {
         "id": 5,
@@ -52,7 +52,7 @@
         "director": "Quentin Tarantino",
         "formato": "VHS",
         "estado": "Bueno",
-        "portada": "theLastJedi.svg"
+        "portada": "pulpfiction.jpg"
     },
     {
         "id": 6,
@@ -63,50 +63,50 @@
         "director": "Robert Zemeckis",
         "formato": "DVD",
         "estado": "Dañado",
-        "portada": "theLastJedi.svg"
+        "portada": "forrest.jpg"
     },
     {
-        "id": 7,
-        "nombre": "The Matrix",
-        "año_estreno": 1999,
-        "sinopsis": "Un hacker descubre que la realidad que conoce es una simulación controlada por máquinas.",
-        "genero": "Ciencia ficción",
-        "director": "Lana y Lilly Wachowski",
-        "formato": "Copia digital",
-        "estado": "Bueno",
-        "portada": "theLastJedi.svg"
-    },
-    {
-        "id": 8,
-        "nombre": "Gladiator",
-        "año_estreno": 2000,
-        "sinopsis": "Un general romano traicionado busca venganza en la arena del Coliseo.",
+        "id": 11,
+        "nombre": "Black Widow",
+        "año_estreno": 2021,
+        "sinopsis": "Natasha Romanoff se enfrenta a su pasado mientras desentraña una peligrosa conspiración relacionada con sus días como espía.",
         "genero": "Acción",
-        "director": "Ridley Scott",
+        "director": "Cate Shortland",
         "formato": "Blu-ray",
-        "estado": "Dañado",
-        "portada": "theLastJedi.svg"
+        "estado": "Bueno",
+        "portada": "viudaNegra.svg"
     },
     {
-        "id": 9,
-        "nombre": "Fight Club",
-        "año_estreno": 1999,
-        "sinopsis": "Un hombre insatisfecho encuentra una nueva forma de vida en un club de peleas clandestinas.",
-        "genero": "Drama",
-        "director": "David Fincher",
+        "id": 12,
+        "nombre": "The Last Jedi",
+        "año_estreno": 2017,
+        "sinopsis": "Rey busca la guía de Luke Skywalker mientras la Resistencia lucha por sobrevivir contra la Primera Orden.",
+        "genero": "Ciencia ficción",
+        "director": "Rian Johnson",
         "formato": "DVD",
         "estado": "Bueno",
         "portada": "theLastJedi.svg"
     },
     {
-        "id": 10,
-        "nombre": "Toy Story",
-        "año_estreno": 1995,
-        "sinopsis": "Un juguete cowboy se siente amenazado cuando su dueño recibe un nuevo juguete espacial.",
-        "genero": "Animación",
-        "director": "John Lasseter",
-        "formato": "VHS",
+        "id": 13,
+        "nombre": "Joker",
+        "año_estreno": 2019,
+        "sinopsis": "Arthur Fleck, un comediante fracasado, se convierte en el icónico villano Joker mientras cae en la locura.",
+        "genero": "Drama",
+        "director": "Todd Phillips",
+        "formato": "Copia digital",
         "estado": "Bueno",
-        "portada": "viudaNegra.svg"
+        "portada": "joker.svg"
+    },
+    {
+        "id": 14,
+        "nombre": "Suicide Squad",
+        "año_estreno": 2016,
+        "sinopsis": "Un grupo de villanos es forzado a trabajar juntos en misiones suicidas para reducir sus condenas.",
+        "genero": "Acción",
+        "director": "David Ayer",
+        "formato": "Blu-ray",
+        "estado": "Dañado",
+        "portada": "Harley.svg"
     }
 ]
